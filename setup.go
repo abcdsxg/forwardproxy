@@ -31,9 +31,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/abcdsxg/forwardproxy/httpclient"
 	"github.com/caddyserver/caddy"
 	"github.com/caddyserver/caddy/caddyhttp/httpserver"
-	"github.com/caddyserver/forwardproxy/httpclient"
 	"golang.org/x/net/proxy"
 )
 

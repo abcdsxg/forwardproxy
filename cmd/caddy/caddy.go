@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/caddyserver/caddy/caddy/caddymain"
 
-	_ "github.com/caddyserver/forwardproxy"
+	_ "github.com/abcdsxg/forwardproxy"
 )
 
 func main() {

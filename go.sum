@@ -45,8 +45,8 @@ github.com/bradfitz/go-smtpd v0.0.0-20170404230938-deb6d6237625/go.mod h1:HYsPBT
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
 github.com/caddyserver/caddy v1.0.5 h1:5B1Hs0UF2x2tggr2X9jL2qOZtDXbIWQb9YLbmlxHSuM=
 github.com/caddyserver/caddy v1.0.5/go.mod h1:AnFHB+/MrgRC+mJAvuAgQ38ePzw+wKeW0wzENpdQQKY=
-github.com/caddyserver/forwardproxy v0.0.0-20211013034647-8c6ef2bd4a8f h1:wC4VlHOHWTjslaf/SBQ4nFaU1aVUZFRqyzZRnCJNV7k=
-github.com/caddyserver/forwardproxy v0.0.0-20211013034647-8c6ef2bd4a8f/go.mod h1:W0aU9LnTqv+Yzt+9Tu72GAb3ERJW6IDNB032Y6R9ZD0=
+github.com/abcdsxg/forwardproxy v0.0.0-20211013034647-8c6ef2bd4a8f h1:wC4VlHOHWTjslaf/SBQ4nFaU1aVUZFRqyzZRnCJNV7k=
+github.com/abcdsxg/forwardproxy v0.0.0-20211013034647-8c6ef2bd4a8f/go.mod h1:W0aU9LnTqv+Yzt+9Tu72GAb3ERJW6IDNB032Y6R9ZD0=
 github.com/cenkalti/backoff v2.1.1+incompatible h1:tKJnvO2kl0zmb/jA5UKAt4VoEVw1qxKWjE/Bpp46npY=
 github.com/cenkalti/backoff v2.1.1+incompatible/go.mod h1:90ReRw6GdpyfrHakVjL/QHaoyV4aDUVVkXQJJJ3NXXM=
 github.com/cenkalti/backoff/v3 v3.0.0 h1:ske+9nBpD9qZsTBoF41nW5L+AIuFBKMeze18XQ3eG1c=
