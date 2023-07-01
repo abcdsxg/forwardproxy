@@ -27,6 +27,7 @@ import (
 	"net/http"
 	"net/url"
 	"sync"
+	"time"
 
 	"golang.org/x/net/http2"
 )
@@ -35,6 +36,7 @@ import (
 type HTTPConnectDialer struct {
 	ProxyUrl      url.URL
 	DefaultHeader http.Header
+	DialTimeout   time.Duration
 
 	// TODO: If spkiFp is set, use it as SPKI fingerprint to confirm identity of the
 	// proxy, instead of relying on standard PKI CA roots
@@ -98,8 +100,16 @@ func NewHTTPConnectDialer(proxyUrlStr string) (*HTTPConnectDialer, error) {
 	return client, nil
 }
 
+func (c *HTTPConnectDialer) SetDialTimeout(timeout time.Duration) {
+	c.DialTimeout = timeout
+}
+
 func (c *HTTPConnectDialer) Dial(network, address string) (net.Conn, error) {
-	return c.DialContext(context.Background(), network, address)
+	ctx := context.Background()
+	if c.DialTimeout > 0 {
+		ctx, _ = context.WithTimeout(ctx, c.DialTimeout)
+	}
+	return c.DialContext(ctx, network, address)
 }
 
 // Users of context.WithValue should define their own types for keys
